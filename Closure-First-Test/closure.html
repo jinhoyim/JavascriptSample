@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /*
+        form *{
+            float: left;
+        }
+        input::after{
+            content: "";
+            display: table;
+            clear: both;
+        }*/
+
+    </style>
+</head>
+<body>
+    <form>
+        <!--<label for="apple_stock">Apple stock : </label>
+        <input type="number" id="apple_stock">
+        <label for="orange_stock">Orange stock : </label>
+        <input type="number" id="orange_stock">
+        <label for="banana_stock">Banana stock : </label>
+        <input type="number" id="banana_stock">-->
+        <div>
+            <label for="apple_stock">Apple 초기값 : </label>
+            <input type="number" id="apple_stock">
+        </div>
+        <div>
+            <label for="orange_stock">Orange 초기값 : </label>
+            <input type="number" id="orange_stock">
+        </div>
+        <div>
+            <label for="banana_stock">Banana 초기값 : </label>
+            <input type="number" id="banana_stock">
+        </div>
+        <button class="btn-apply" type="button">과일 수량 적용</button>
+        <button class="btn-start" type="button">시작</button>
+    </form>
+    <div>
+        <p>apple : <span class="apple"></span></p>
+        <p>orange : <span class="orange"></span></p>
+        <p>banana : <span class="banana"></span></p>
+    </div>
+    <div class="buttons">
+        <button data-fruit="apple">Apple</button>
+        <button data-fruit="orange">Orange</button>
+        <button data-fruit="banana">Banana</button>
+    </div>
+    <script src="closure.js"></script>
+</body>
+</html>
