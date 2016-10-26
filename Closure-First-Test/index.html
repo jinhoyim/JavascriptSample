@@ -49,6 +49,17 @@
         <button data-fruit="orange">Orange</button>
         <button data-fruit="banana">Banana</button>
     </div>
+    <div>
+        <ol>
+            <li>초기값을 설정하고 과일수량을 적용한 후 시작(시작은 여기만)</li>
+            <li>개발자도구 console 에서 fruits 를 이용해서 변수값 확인</li>
+            <li>과일 버튼을 눌러서 수량을 감소시키고 변수값을 확인해도 변화가 없음을 확인</li>
+            <li>수량을 변경하고 수량을 다시 적용하고 console 에서 fruit 을 다시 확인</li>
+            <li>과일 수량을 다시 감소</li>
+        </ol>
+        <p>시작버튼을 눌러서 클로저 함수를 이벤트에 새로 할당할 때만 하단의 과일 수량이 "복사"됨</p>
+        <p>클로저 내부의 과일 수량은 fruits 변수 안의 과일 수량과 분리되어 있음을 확인</p>
+    </div>
     <script src="closure.js"></script>
 </body>
 </html>
