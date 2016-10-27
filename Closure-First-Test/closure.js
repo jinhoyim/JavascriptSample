@@ -10,11 +10,11 @@
 
     var isStart = false;
 
-    var getOrderFruitService = function(fruit_name, fruit_count){
+    var getOrderFruitService = function(fruit_name, fruits){
         var orderFruit = function(){
-            fruit_count--;
+            fruits[fruit_name]--;
             var view = doc.querySelector('.' + fruit_name);
-            view.innerHTML = fruit_count;
+            view.innerHTML = fruits[fruit_name];
         }
         return orderFruit;
     };
@@ -30,7 +30,7 @@
         fruits.apple = apple_stock.value;
         fruits.orange = orange_stock.value;
         fruits.banana = banana_stock.value;
-        
+
         if(!isStart)
         {
             for(var prop in fruits)
@@ -46,9 +46,9 @@
         for(var i = 0, l = buttons.length; i < l; i++)
         {
             fruit_name = buttons[i].getAttribute('data-fruit');
-            buttons[i].onclick = getOrderFruitService(fruit_name, fruits[fruit_name]);
+            buttons[i].onclick = getOrderFruitService(fruit_name, fruits);
         }
     }
 
-    
+
 })(this);
